@@ -1,2 +1,1 @@
-__all__ = ["add"]
-from .basic_functions import add
+from .supervised_learning import *
