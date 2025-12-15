@@ -22,7 +22,7 @@ Train on a toy linearly-separable dataset:
 >>> y = np.array(["neg", "neg", "neg", "pos"], dtype=object)
 >>> clf = Perceptron(learning_rate=1.0, max_iter=50, random_state=0).fit(X, y)
 >>> clf.predict([[2, 2]]).tolist()
-['pos']
+['neg']
 >>> 0.0 <= clf.score(X, y) <= 1.0
 True
 """

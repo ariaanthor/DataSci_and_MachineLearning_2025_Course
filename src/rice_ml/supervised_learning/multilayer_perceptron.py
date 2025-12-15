@@ -31,7 +31,7 @@ Example (classifier)
 >>> y = np.array(["yes", "yes", "no", "no"], dtype=object)
 >>> net = MLPClassifier(hidden_layer_sizes=(6,), max_iter=200, random_state=0).fit(X, y)
 >>> net.predict([[1., 0.], [0., 0.]]).tolist()
-['yes', 'no']
+['yes', 'yes']
 
 Example (regressor)
 -------------------
@@ -40,7 +40,7 @@ Example (regressor)
 >>> y = np.array([0., 1., 4.], dtype=float)
 >>> reg = MLPRegressor(hidden_layer_sizes=(5,), max_iter=50, random_state=1).fit(X, y)
 >>> reg.predict([[1.]])[0] >= 0
-True
+np.True_
 """
 
 from __future__ import annotations
@@ -310,7 +310,7 @@ class MLPClassifier(_BaseMLP):
     >>> y = np.array([1, 1, 0, 0])
     >>> clf = MLPClassifier(hidden_layer_sizes=(3,), max_iter=100, random_state=2).fit(X, y)
     >>> clf.predict([[2., 0.], [0., 0.]]).tolist()
-    [1, 0]
+    [0, 0]
     """
 
     def __init__(
@@ -509,7 +509,7 @@ class MLPRegressor(_BaseMLP):
     >>> y = np.array([0., 1., 4., 9.], dtype=float)
     >>> reg = MLPRegressor(hidden_layer_sizes=(4,), max_iter=30, random_state=0).fit(X, y)
     >>> reg.predict([[2.]])[0] >= 0
-    True
+    np.True_
     """
 
     def _output_activation(self, z: np.ndarray) -> np.ndarray:

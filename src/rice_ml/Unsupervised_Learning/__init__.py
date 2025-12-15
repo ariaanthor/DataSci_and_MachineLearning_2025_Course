@@ -1,7 +1,7 @@
-from Community_Detection import *
-from DBSCAN import *
-from PCA import *
-from K_Means_Clustering import *
+from rice_ml.unsupervised_learning.community_detection import (SpectralClustering, LabelPropagation)
+from rice_ml.unsupervised_learning.dbscan import DBSCAN
+from rice_ml.unsupervised_learning.pca import PCA
+from rice_ml.unsupervised_learning.k_means_clustering import KMeans
 
 __all__ = [
     'KMeans',

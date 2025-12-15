@@ -1,8 +1,35 @@
-from processing import *
-from unsupervised_learning import *
-from supervised_learning import *
+# Distance metrics
+from rice_ml.supervised_learning.distance_metrics import (
+    euclidean_distance,
+    manhattan_distance,
+)
 
-__version__ = "0.1.0"
+# Supervised learning
+from rice_ml.supervised_learning.knn import KNNClassifier, KNNRegressor
+from rice_ml.supervised_learning.decision_trees import DecisionTreeClassifier
+from rice_ml.supervised_learning.regression_trees import DecisionTreeRegressor
+from rice_ml.supervised_learning.linear_regression import (
+    LinearRegression,
+    RidgeRegression,
+    LassoRegression,
+)
+from rice_ml.supervised_learning.logistic_regression import LogisticRegression
+from rice_ml.supervised_learning.perceptron import Perceptron
+from rice_ml.supervised_learning.multilayer_perceptron import MLPClassifier, MLPRegressor
+from rice_ml.supervised_learning.ensemble_methods import (
+    RandomForestClassifier,
+    AdaBoostClassifier,
+    BaggingClassifier,
+)
+
+# Unsupervised learning
+from rice_ml.unsupervised_learning.k_means_clustering import KMeans
+from rice_ml.unsupervised_learning.dbscan import DBSCAN
+from rice_ml.unsupervised_learning.pca import PCA
+from rice_ml.unsupervised_learning.community_detection import (
+    SpectralClustering,
+    LabelPropagation,
+)
 
 __all__ = [
     # Version
@@ -33,38 +60,36 @@ __all__ = [
     'euclidean_distance',
     'manhattan_distance',
     
-    # KNN
+    # Supervised Learning - KNN
     'KNNClassifier',
     'KNNRegressor',
     
-    # Trees
+    # Supervised Learning - Trees
     'DecisionTreeClassifier',
     'DecisionTreeRegressor',
     
-    # Linear Models
+    # Supervised Learning - Linear Models
     'LinearRegression',
     'RidgeRegression',
     'LassoRegression',
     'LogisticRegression',
     
-    # Neural Networks
+    # Supervised Learning - Neural Networks
     'Perceptron',
     'MLPClassifier',
     'MLPRegressor',
-    'RNNClassifier',
-    'GRUClassifier',
     
-    # Ensemble Methods
+    # Supervised Learning - Ensemble
     'RandomForestClassifier',
     'AdaBoostClassifier',
     'BaggingClassifier',
     
-    # Clustering
+    # Unsupervised Learning - Clustering
     'KMeans',
     'DBSCAN',
     'SpectralClustering',
     'LabelPropagation',
     
-    # Dimensionality Reduction
+    # Unsupervised Learning - Dimensionality Reduction
     'PCA',
 ]

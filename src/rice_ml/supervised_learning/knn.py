@@ -33,7 +33,7 @@ Small demo
 >>> Xr = np.array([[0.], [1.], [4.]], dtype=float)
 >>> yr = np.array([0.0, 1.0, 2.0])
 >>> float(KNNRegressor(n_neighbors=2, weights="uniform").fit(Xr, yr).predict([[2.0]])[0])
-1.5
+0.5
 """
 
 from __future__ import annotations

@@ -15,16 +15,19 @@ dependencies = ["numpy", "matplotlib", "seaborn", "pandas", "requests", "pytest"
 [project.optional-dependencies]
 dev = ["pytest"]
 
+# >>> These two lines make the src/ layout unambiguous <<<
 [tool.setuptools]
 package-dir = { "" = "src" }
 
 [tool.setuptools.packages.find]
 where = ["src"]
 
+# [tool.pytest.ini_options]
+# minversion = "6.0"
+# addopts = "-ra -q"
+# testpaths = ["tests"]
+
 [tool.pytest.ini_options]
 addopts = "--doctest-modules"
 doctest_optionflags = ["NORMALIZE_WHITESPACE", "ELLIPSIS"]
-testpaths = ["tests/"]
-pythonpath = [
-    "src"
-]
+testpaths = ["src/rice_ml/supervised_learning", "tests"]

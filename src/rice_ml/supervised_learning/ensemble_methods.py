@@ -31,7 +31,7 @@ from typing import Optional, Union, Sequence
 
 import numpy as np
 
-from ..Decision_Trees.decision_trees import DecisionTreeClassifier
+from rice_ml.supervised_learning.decision_trees import DecisionTreeClassifier
 
 __all__ = [
     "RandomForestClassifier",

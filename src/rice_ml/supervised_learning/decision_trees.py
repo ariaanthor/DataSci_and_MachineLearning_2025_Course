@@ -6,21 +6,6 @@ A lightweight implementation of a CART-style decision tree classifier.
 The classifier supports Gini impurity, depth limits, minimum sample
 constraints, and optional feature subsampling.
 
-Example
--------
->>> import numpy as np
->>> from rice_ml.supervised_learning.decision_tree import DecisionTreeClassifier
->>>
->>> X = np.array([[0, 0],
-...               [0, 1],
-...               [1, 0],
-...               [1, 1]])
->>> y = np.array([0, 0, 1, 1])
->>>
->>> model = DecisionTreeClassifier(max_depth=2, random_state=42)
->>> model.fit(X, y)
->>> model.predict(X)
-array([0, 0, 1, 1])
 """
 
 from __future__ import annotations

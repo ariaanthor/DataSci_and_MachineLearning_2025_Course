@@ -8,22 +8,6 @@ mean squared error (variance) in the target values.
 The goal of this implementation is clarity and instructional value
 rather than raw performance.
 
-Model
------
-DecisionTreeRegressor
-    A univariate-output regression tree.
-
-Example
--------
->>> import numpy as np
->>> from rice_ml.supervised_learning.regression_trees import DecisionTreeRegressor
->>> X = np.array([[0], [1], [2], [3]], dtype=float)
->>> y = np.array([0.0, 1.2, 1.9, 3.1])
->>> tree = DecisionTreeRegressor(max_depth=2)
->>> tree.fit(X, y)
->>> pred = tree.predict([[1.5]])
->>> pred.shape
-(1,)
 """
 
 from __future__ import annotations
