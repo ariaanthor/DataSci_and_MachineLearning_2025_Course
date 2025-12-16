@@ -3,7 +3,7 @@ Supervised learning is a class of machine learning where the goal is to learn a 
 
 This project explores a variety of supervised learning algorithms, each with different strengths and applications:
 
-### The Perceptron
+### Perceptron
 The Perceptron is one of the earliest binary classifiers. It learns a linear decision boundary by adjusting weights through a simple rule based on misclassified examples. Though limited to linearly separable data, it's foundational to understanding more complex models like neural networks.
 Dataset used: A 2D projection of the UCI German Credit dataset, with credit risk as the binary target.
 

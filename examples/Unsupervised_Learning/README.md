@@ -4,6 +4,10 @@ Unsupervised learning is a class of machine learning techniques used to discover
 
 This section highlights several fundamental unsupervised learning techniques, each serving a different purpose:
 
+### Community Detection
+Community detection is an unsupervised learning approach applied to graph-structured data, where the goal is to identify groups of nodes that are more densely connected to each other than to the rest of the network. Unlike traditional clustering methods that operate on feature vectors, community detection leverages the connectivity structure of a graph to uncover latent groupings. These methods are widely used in social networks, biological networks, and information graphs.
+Dataset used: Zachary's Karate Club: A graph-based dataset where nodes represent entities and edges represent relationships or interactions, allowing communities to be inferred directly from network structure.
+
 ### K-Means Clustering
 K-Means is a centroid-based clustering algorithm that partitions data into *k* clusters. It initializes *k* cluster centers, assigns each data point to the nearest center, and iteratively updates the centers to minimize intra-cluster variance. It's efficient and widely used, though sensitive to initialization and assumes spherical clusters.
 Dataset used: Synthetic 2D dataset generated with make_blobs to clearly visualize and evaluate clustering behavior.
