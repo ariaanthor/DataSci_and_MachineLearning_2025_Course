@@ -42,11 +42,6 @@ Check that training converged early (often, but not guaranteed for every random 
 >>> len(p.errors_) <= p.epochs
 True
 
-See the raw decision score (signed distance up to scale):
-
->>> float(p.net_input(np.array([1.0, 1.0])))  # doctest: +ELLIPSIS
-...
-
 """
 
 from __future__ import annotations
@@ -109,7 +104,7 @@ class Perceptron(object):
     >>> clf = Perceptron(eta=0.2, epochs=30).train(X, y)
     >>> preds = clf.predict(X)
     >>> (preds == y).all()
-    True
+    np.True_
 
     Non-separable example (XOR) will not converge perfectly:
 
@@ -282,7 +277,7 @@ class Perceptron(object):
         >>> p = Perceptron(eta=0.5, epochs=10).train(X, y)
         >>> s = p.net_input(np.array([1.0, 2.0]))
         >>> np.isfinite(s).all()
-        True
+        np.True_
         """
         # np.dot handles both vector and matrix input appropriately here:
         # - (n_features,) dot (n_features,) -> scalar

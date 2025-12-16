@@ -107,14 +107,14 @@ class KNN:
     >>> knn = KNN(k=1)
     >>> knn.fit(X_train, y_train)
     >>> knn.predict(np.array([[2.2], [0.2]]))
-    [1, 0]
+    [np.int64(1), np.int64(0)]
 
     Using k=3 (majority vote):
 
     >>> knn = KNN(k=3)
     >>> knn.fit(X_train, y_train)
     >>> knn.predict(np.array([[1.6]]))  # neighbors around 1.6 lean toward label 1
-    [1]
+    [np.int64(1)]
     """
 
     def __init__(self, k):
@@ -263,7 +263,7 @@ class KNN:
         2
         >>> # Distances are sorted ascending:
         >>> neigh[0][-1] <= neigh[1][-1]
-        True
+        np.True_
         """
         neighbors = []
 

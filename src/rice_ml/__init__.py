@@ -5,7 +5,7 @@ from rice_ml.supervised_learning.distance_metrics import (
 )
 
 # Supervised learning
-from rice_ml.supervised_learning.knn import KNNClassifier, KNNRegressor
+from rice_ml.supervised_learning.knn import KNN
 from rice_ml.supervised_learning.decision_trees import DecisionTreeClassifier
 from rice_ml.supervised_learning.regression_trees import DecisionTreeRegressor
 from rice_ml.supervised_learning.linear_regression import (
