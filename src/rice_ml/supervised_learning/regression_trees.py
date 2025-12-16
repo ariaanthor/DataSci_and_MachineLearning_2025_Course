@@ -1,5 +1,5 @@
 """
-Decision Tree Regression.
+regression_trees.py
 
 This module implements a basic regression tree using a greedy,
 top-down CART-style algorithm. Splits are chosen to minimize
