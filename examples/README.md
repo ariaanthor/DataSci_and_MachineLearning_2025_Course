@@ -3,7 +3,7 @@
 
 # Notebook Demonstrations
 
-This directory contains a curated collection of **machine learning notebooks** covering both **supervised** and **unsupervised** learning techniques. The notebooks are designed to emphasize conceptual understanding, algorithm behavior, and practical application through hands-on experimentation with real and synthetic datasets.
+This directory contains a curated collection of **machine learning notebooks** covering both **supervised** and **unsupervised** ML techniques. The notebooks are designed to emphasize conceptual understanding, algorithm behavior, and practical application through hands-on experimentation with real and synthetic datasets.
 
 ---
 
